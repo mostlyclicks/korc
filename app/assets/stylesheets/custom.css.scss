@@ -1,0 +1,38 @@
+//Base
+$border-radius-base:0;
+$navbar-default-bg:rgba(0,0,0,1);
+$mustard:#ecd902;
+$navbar-default-link-color:$mustard;
+$navbar-default-link-active-color:darken($mustard, 40%);
+$navbar-default-link-active-bg:$mustard;
+
+$roboto:'Roboto Slab', serif; 
+//100, 300, 400, 700
+
+.navbar-nav {
+  font-family: $roboto;
+  font-weight:400;
+}
+
+.navbar-header {
+  h1 {
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:20px;
+    font-family: $roboto;
+    font-weight:700;
+    text-transform: uppercase;
+    line-height: 50px;
+
+    a {
+      color:$mustard;
+    }
+  }
+}
+
+body {
+  font-family: $roboto !important;
+  font-weight:400;
+  font-size:14px;
+}
+
