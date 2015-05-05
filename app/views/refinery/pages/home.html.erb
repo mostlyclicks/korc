@@ -1,1 +1,22 @@
-<%= render '/refinery/content_page' %>
+<section id="top-image"></section>
+
+<%#= render '/refinery/content_page' %>
+
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" id="sidebar">
+        <p><strong>Kinnickinnic Off-Road Cyclists, Inc. </strong>
+        P.O. Box 354<br />
+        River Falls, WI 54022</p>
+
+        <%= raw @page.content_for(:sidebar) %>
+      </div>
+      <div class="col-md-9">
+        <h1><%= raw @page.title %></h1>
+        <%= raw @page.content_for(:body) %>
+      </div>
+    </div>
+  </div>
+</section>
+
