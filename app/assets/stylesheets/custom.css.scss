@@ -44,6 +44,7 @@ body {
 
 #sidebar {
   margin-top:20px;
+  margin-bottom:80px;
   a {
     color:$mustard;
     &:hover {color:lighten($mustard, 10%);}
@@ -53,6 +54,14 @@ body {
 
 #content {
   min-height:80vh;
+}
+
+#content-home {
+  min-height: 50vh;
+}
+
+#social-home {
+  margin-bottom:80px;
 }
 
 footer {

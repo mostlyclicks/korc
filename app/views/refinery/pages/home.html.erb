@@ -32,7 +32,7 @@
 
 <%#= render '/refinery/content_page' %>
 
-<section id="content">
+<section id="content-home">
   <div class="container">
     <div class="row">
       <div class="col-md-3" id="sidebar">
@@ -43,8 +43,27 @@
       <div class="col-md-9">
         <h1><%= raw @page.title %></h1>
         <%= raw @page.content_for(:body) %>
+
+        <section id="social-home">
+
+  <div class="row">
+    <div class="col-md-6">
+      <%= render '/refinery/shared/twitter' %>
+    </div>
+    <div class="col-md-6">
+      <%= render '/refinery/shared/facebook' %>
+
+    </div>
+  </div>
+
+
+</section>
+
+
+
       </div>
     </div>
   </div>
 </section>
+
 
