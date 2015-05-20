@@ -49,6 +49,11 @@ body {
     color:$mustard;
     &:hover {color:lighten($mustard, 10%);}
   }
+
+}
+
+#sb-fb, #sb-tw {
+  margin-top:20px;
 }
 
 
