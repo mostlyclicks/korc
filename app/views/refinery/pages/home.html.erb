@@ -47,13 +47,13 @@
         <%= raw @page.content_for(:body) %>
         <section id="sponsors">
           <h3>Our Sponsors</h3>
-          <% @sponsors.each do |s| %>
+          <%# @sponsors.each do |s| %>
             <div class="col-md-4">
-              <%= image_tag s.sponsor_image.url, class: 'img-responsive' %>
-              <h4><%= link_to s.name, s.sponsor_website %></h4>
+              <%#= image_tag s.sponsor_image.url, class: 'img-responsive' %>
+              <h4><%#= link_to s.name, s.sponsor_website %></h4>
 
             </div>
-          <% end %>
+          <%# end %>
 
 
 
