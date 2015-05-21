@@ -35,30 +35,33 @@
 <section id="content-home">
   <div class="container">
     <div class="row">
-      <div class="col-md-3" id="sidebar">
-        <%= render '/refinery/shared/address' %>
 
+      <div class="col-md-8 col-md-push-4">
+        <h1><%= raw @page.title %></h1>
+        <%= raw @page.content_for(:body) %>
+        <section id="sponsors">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Our Sponsors</h3>
+          <% @sponsors.each do |s| %>
+            <div class="col-md-4 col-xs-6">
+              <%= image_tag s.sponsor_image.url, class: 'img-responsive' %>
+              <h4><%= link_to s.name, s.sponsor_website %></h4>
+            </div>
+          <% end %>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+
+      <div class="col-md-4 col-md-pull-8" id="sidebar">
+        <%= render '/refinery/shared/address' %>
         <%= raw @page.content_for(:sidebar) %>
         <div id="sb-fb"><%= render '/refinery/shared/facebook' %></div>
         <div id="sb-tw"><%= render '/refinery/shared/twitter' %></div>
       </div>
-      <div class="col-md-9">
-        <h1><%= raw @page.title %></h1>
-        <%= raw @page.content_for(:body) %>
-        <section id="sponsors">
-          <h3>Our Sponsors</h3>
-          <% @sponsors.each do |s| %>
-            <div class="col-md-4">
-              <%= image_tag s.sponsor_image.url, class: 'img-responsive' %>
-              <h4><%= link_to s.name, s.sponsor_website %></h4>
 
-            </div>
-          <% end %>
-
-
-
-        </section>
-      </div>
     </div>
   </div>
 </section>

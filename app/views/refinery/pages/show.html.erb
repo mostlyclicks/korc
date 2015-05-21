@@ -37,18 +37,18 @@
 <section id="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3" id="sidebar">
-        <%= render '/refinery/shared/address' %>
-
-        <%= raw @page.content_for(:sidebar) %>
-        <%= render '/refinery/shared/twitter' %>
-        <br /><br />
-        <%= render '/refinery/shared/facebook' %>
-      </div>
-      <div class="col-md-9">
+      <div class="col-md-8 col-md-push-4">
         <h1><%= raw @page.title %></h1>
         <%= raw @page.content_for(:body) %>
       </div>
+
+      <div class="col-md-4 col-md-pull-8" id="sidebar">
+        <%= render '/refinery/shared/address' %>
+        <%= raw @page.content_for(:sidebar) %>
+        <div id="sb-fb"><%= render '/refinery/shared/facebook' %></div>
+        <div id="sb-tw"><%= render '/refinery/shared/twitter' %></div>
+      </div>
+
     </div>
   </div>
 </section>
