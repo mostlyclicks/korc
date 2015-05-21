@@ -1,10 +1,12 @@
 //Base
 $border-radius-base:0;
 $navbar-default-bg:rgba(0,0,0,1);
-$mustard:#ecd902;
+$mustard:#fcb823;
 $navbar-default-link-color:$mustard;
 $navbar-default-link-active-color:darken($mustard, 40%);
 $navbar-default-link-active-bg:$mustard;
+
+$grid-float-breakpoint:992px;
 
 $roboto:'Roboto Slab', serif; 
 //100, 300, 400, 700
@@ -27,6 +29,9 @@ $roboto:'Roboto Slab', serif;
     a {
       color:$mustard;
     }
+  }
+  #brand {
+    margin-top:-5px;
   }
 }
 
