@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-sponsors'
   s.version           = '1.0'
+  s.author            = 'mc'
   s.description       = 'Ruby on Rails Sponsors extension for Refinery CMS'
   s.date              = '2015-05-20'
   s.summary           = 'Sponsors extension for Refinery CMS'
